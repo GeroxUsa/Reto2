@@ -120,4 +120,4 @@ function peticionDelete(){
 // peticionDelete()
 // peticionPost()
 // peticionPut()
-// peticionGet()
+peticionGet()
