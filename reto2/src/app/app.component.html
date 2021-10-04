@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="app.component.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Consumir API Producto Oracle Cloud</title>
+</head>
+
+<body>
+  <div class="waviy">
+    <span style="--i:1">R</span>
+    <span style="--i:2">E</span>
+    <span style="--i:3">T</span>
+    <span style="--i:4">O</span>
+    <span style="--i:5">2</span>
+    <span style="--i:6">-</span>
+    <span style="--i:7">M</span>
+    <span style="--i:8">I</span>
+    <span style="--i:9">N</span>
+    <span style="--i:10">T</span>
+    <span style="--i:10">I</span>
+    <span style="--i:10">C</span>
+  </div>
+
+  <section>
+    <input type="number" placeholder="Id del juego" required="required">
+  </section>
+
+  <button (click)="peticionGet()">Ver</button>
+  <button (click)="peticionPost()">Insertar</button>
+  <button (click)="peticionPut()">Actualizar</button>
+  <button (click)="peticionDelete()">Eliminar</button>
+  <p id="result"></p>
+  <div id="app">
+    <form >
+      <div>
+        <label for="name">Name:</label><br>
+        <input id="name" type="text" v-model="name" required />
+      </div>
+      <div>
+        <label for="email">Email:</label><br>
+        <input id="email" type="email" v-model="email" required />
+      </div>
+      <div>
+        <label for="caps">HOW DO I TURN OFF CAPS LOCK:</label><br>
+        <textarea id="caps" v-model="caps" required></textarea>
+      </div>
+      <button  type="submit">Submit</button>
+      <div>
+        <h3>Response from server:</h3>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
